@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'CNRGN';
+    src: url('../fonts/CNRGN-Block-V2.ttf');
+}
+
+.cn-font {
+    font-family: "CNRGN";
+}
+
+.id-pass {
+    width: 75%;
+    position: relative;
+}
+
+.in {
+    font-size: 15px;
+    color: #222222;
+    width: 100%;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    background: none;
+    z-index: 5;
+}
+
+.in::-webkit-input-placeholder {
+    overflow: hidden;
+    padding-left: 9px;
+}
+
+.in::placeholder {
+    color: #aaaaaa;
+}
+
+.in:focus {
+    outline: none;
+}
+
+.in-span {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    /* right로만 바꿔주면 오 - 왼 */
+    background-color: #666;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.in-label {
+    position: absolute;
+    color: #aaa;
+    left: 10px;
+    font-size: 18px;
+    bottom: 8px;
+    transition: all .2s;
+}
+
+.in:focus~.in-label,
+.in:valid~.in-label {
+    font-size: 14px;
+    bottom: 40px;
+    color: #666;
+    font-weight: bold;
+}
+
+.in:focus~.in-span,
+.in:valid~.in-span {
+    width: 100%;
+}
+
+#sign-in {
+    transition: all 0.5s ease;
+}
+#sign-up {
+    transition: all 0.5s ease;
+  }
