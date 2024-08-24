@@ -9,5 +9,11 @@
     "module": "commonjs",
     "lib": ["es6", "dom"],
     "types": ["node"]
-  }
+  },
+  "typeRoots": [
+    "./node_modules/phaser/types"
+  ],
+  "types": [
+    "Phaser"
+  ]
 }
