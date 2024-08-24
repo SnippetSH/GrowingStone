@@ -22,7 +22,7 @@ export default function Game() {
           pixelArt: true,
           roundPixels: true,
         },
-        scene: GamePhScene,
+        scene: [GamePhScene],
     };
 
     useGame(gameConfig, gameRef);
